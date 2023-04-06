@@ -2,53 +2,60 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+<h1>Creating a Virtual Machine</h1>
+In this tutorial, we observe the creation of a virtual machines in Microsoft Azure. <br />
 
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure
+- Personal Computer
 - Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
-- Wireshark (Protocol Analyzer)
+
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2)
-- Ubuntu Server 20.04
+- Linux Ubuntu
 
-<h2>High-Level Steps</h2>
+<h2>Steps</h2>
 
-- I created two vm's in Microsoft Azure. One vm was running Windows 10 and the other vm was running Linux (Ubuntu).
-- I had the Windows 10 vm constantly ping the Linux vm using ping -t.
-- I used Wireshark to show ICMP traffic.
-- I then used Wireshark to observe other types of traffic including SSH, DHCP, DNS,and RDP.
+- I created a resource group in Microsoft Azure.
+- I then created a vm running Windows 10.
+- I then created a vm running Linux Ubuntu.
+- Lastly, I opened both vms to ensure they were working properly.
 
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/kiztAGW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3L6qTxq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Using Wireshark I watched ICMP traffic between the two vms'.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/erw50IE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-I then denied ICMP traffic using the firewall on Microsft Azure.
+I created a resource group to organize the two vms.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/rT6K2OZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/fDc9Cuj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Finally, I observed SSH traffic between the two vms' using Wireshark.
+I then created a vm for windows 10 that also created a virtual network for bot vms.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/BBoJIw8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next, I created a vm for Linux Ubuntu.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/fL4f2wg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lastly, I tested out the vms to ensure they were set-up correctly.
 </p>
 <br />
